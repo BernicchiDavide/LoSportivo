@@ -17,6 +17,9 @@ public class LoSportivo {
         IntBox maglia= new IntBox(2);
         Sportivo sport= new Sportivo(5, maglia);
         Lavnderia lavatrice = new Lavnderia(3, maglia);
+        
+        sport.start();
+        lavatrice.start();
     }
     
 }

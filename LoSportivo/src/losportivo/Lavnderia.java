@@ -23,11 +23,14 @@ public class Lavnderia extends Thread {
     
     @Override
     public void run(){
-        try {
-            sleep(tempo*1000);
-            maglia.set(maglia.get()+1);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(Lavnderia.class.getName()).log(Level.SEVERE, null, ex);
+        while(true){
+            try {
+                sleep(tempo*1000);
+                maglia.set(maglia.get()+1);
+              //  System.out.print("<<Lavanderia pulisce maglia:  " + maglia.get());
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Lavnderia.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }
 }
