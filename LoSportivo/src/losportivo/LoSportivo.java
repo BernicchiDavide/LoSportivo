@@ -14,8 +14,9 @@ public class LoSportivo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Sportivo sport= new Sportivo(5);
-        Lavanderia lavatrice = new Lavanderia(3);
+        IntBox maglia= new IntBox(2);
+        Sportivo sport= new Sportivo(5, maglia);
+        Lavnderia lavatrice = new Lavnderia(3, maglia);
     }
     
 }

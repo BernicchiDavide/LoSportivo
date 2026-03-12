@@ -4,14 +4,30 @@
  */
 package losportivo;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.Timer;
+
 /**
  *
  * @author 39340
  */
-public class Lavnderia {
+public class Lavnderia extends Thread {
     int tempo;
+    IntBox maglia;
     
-    Lavnderia(int t){
+    Lavnderia(int t, IntBox ib){
+        maglia = ib;
         tempo = t;
+    }
+    
+    @Override
+    public void run(){
+        try {
+            sleep(tempo*1000);
+            maglia.set(maglia.get()+1);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Lavnderia.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 }

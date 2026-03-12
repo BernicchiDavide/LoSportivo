@@ -4,14 +4,29 @@
  */
 package losportivo;
 
+import static java.lang.Thread.sleep;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author 39340
  */
-public class Sportivo {
+public class Sportivo extends Thread {
     int tempo;
+    IntBox maglia;
     
-    Sportivo(int t){
+    Sportivo(int t, IntBox ib){
+        maglia = ib;
         tempo = t;
+    }
+        @Override
+    public void run(){
+        try {
+            sleep(tempo*1000);
+            maglia.set(maglia.get()+1);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Lavnderia.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 }
