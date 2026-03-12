@@ -14,7 +14,8 @@ public class LoSportivo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Sportivo sport= new Sportivo(5);
+        Lavanderia lavatrice = new Lavanderia(3);
     }
     
 }

@@ -9,5 +9,9 @@ package losportivo;
  * @author 39340
  */
 public class Lavnderia {
+    int tempo;
     
+    Lavnderia(int t){
+        tempo = t;
+    }
 }

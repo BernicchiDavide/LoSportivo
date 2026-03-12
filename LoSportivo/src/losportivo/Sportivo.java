@@ -9,5 +9,9 @@ package losportivo;
  * @author 39340
  */
 public class Sportivo {
+    int tempo;
     
+    Sportivo(int t){
+        tempo = t;
+    }
 }
