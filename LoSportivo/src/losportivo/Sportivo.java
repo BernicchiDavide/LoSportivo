@@ -26,7 +26,7 @@ public class Sportivo extends Thread {
             try {
                 sleep(tempo*1000);
                 maglia.set(maglia.get()-1);
-                System.out.print("<<Sportivo sporca maglia:  " + maglia.get());
+                System.out.print("\n<<Sportivo sporca maglia:  " + maglia.get());
             } catch (InterruptedException ex) {
                 Logger.getLogger(Lavnderia.class.getName()).log(Level.SEVERE, null, ex);
             }

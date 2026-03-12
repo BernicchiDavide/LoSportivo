@@ -6,7 +6,6 @@ package losportivo;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.Timer;
 
 /**
  *
@@ -27,7 +26,7 @@ public class Lavnderia extends Thread {
             try {
                 sleep(tempo*1000);
                 maglia.set(maglia.get()+1);
-              //  System.out.print("<<Lavanderia pulisce maglia:  " + maglia.get());
+                System.out.print("\n<<Lavanderia pulisce maglia:  " + maglia.get());
             } catch (InterruptedException ex) {
                 Logger.getLogger(Lavnderia.class.getName()).log(Level.SEVERE, null, ex);
             }

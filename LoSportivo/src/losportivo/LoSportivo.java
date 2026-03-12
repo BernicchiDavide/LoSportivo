@@ -9,7 +9,6 @@ package losportivo;
  * @author 39340
  */
 public class LoSportivo {
-
     /**
      * @param args the command line arguments
      */

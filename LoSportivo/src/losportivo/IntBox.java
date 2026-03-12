@@ -18,7 +18,7 @@ public class IntBox {
         return n;
     }
     public synchronized void set(int x){
-        if(0 <= x && x >= 2){
+        if(x >= 0 && x <= 2){
             n = x;
         }
     }
