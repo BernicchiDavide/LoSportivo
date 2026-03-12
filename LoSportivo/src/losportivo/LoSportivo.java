@@ -14,6 +14,8 @@ public class LoSportivo {
      */
     public static void main(String[] args) {
         IntBox maglia= new IntBox(2);
+        //per cambire il tempo basta 
+        //cambiare il numero in input delle classi (Secondi)
         Sportivo sport= new Sportivo(5, maglia);
         Lavnderia lavatrice = new Lavnderia(3, maglia);
         
